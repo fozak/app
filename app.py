@@ -3,8 +3,12 @@ from pydantic import BaseModel, ValidationError
 import pandas as pd
 import json
 from datetime import datetime
+from flask_cors import CORS  # Import CORS
 
 app = Flask(__name__)
+
+#enable CORS
+CORS(app)
 
 # Initialize an empty DataFrame to hold the posts
 posts_df = pd.DataFrame(columns=["id", "payload", "posted_at", "post_id", "username", "user_id", "topic_id", 
