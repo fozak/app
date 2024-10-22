@@ -6,3 +6,4 @@ MarkupSafe==2.1.1
 Werkzeug==2.2.2
 pydantic==1.10.2
 pandas==2.2.3
+Flask-Cors 5.0.0
